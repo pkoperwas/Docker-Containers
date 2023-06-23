@@ -1,9 +1,8 @@
-bind based on alpine
+# bind based on alpine
 
-Small alpine container with bind package installed.
+## Small alpine container with bind package installed.
 
-Usage
-
+```bash
 docker run -d \
   --name=bind \
   -p 172.16.77.254:53:53/udp \
@@ -12,3 +11,4 @@ docker run -d \
   -v /srv/bind/lab-rev:/etc/bind/lab-rev:ro \
   --restart unless-stopped \
   pkoperwas/alpine-bind
+```
