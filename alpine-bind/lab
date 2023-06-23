@@ -1,0 +1,20 @@
+$TTL 3600
+@                   IN SOA  lab. root.lab. (
+                                0       ; serial
+                                0       ; refresh (6 hours)
+                                0       ; retry (2 hours)
+                                0       ; expire (2 weeks)
+                                0       ; minimum (2 days)
+                                )
+
+
+                                NS      instructor.lab.
+
+
+vlan254-subnet                  A       172.16.77.0
+
+koperwas                        A       172.16.77.2
+
+jumphost-vlan0-to-vlan254       A       172.16.77.254
+instructor                      A       172.16.77.254
+vlan254-broadcast               A       172.16.77.255
