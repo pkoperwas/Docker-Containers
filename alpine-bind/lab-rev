@@ -1,0 +1,15 @@
+$TTL    3600
+@       IN      SOA     lab. root.lab.  (
+                                0      ; Serial
+                                0      ; Refresh
+                                0      ; Retry
+                                0      ; Expire
+                                0 )    ; Minimum
+
+                NS      instructor.lab.
+
+
+0               PTR     vlan254-subnet.lab.
+2               PTR     koperwas.lab.
+254             PTR     jumphost-vlan0-to-vlan254.lab.
+255             PTR     vlan254-broadcast.lab.
