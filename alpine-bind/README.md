@@ -1,4 +1,4 @@
-# bind based on alpine
+# bind dns server based on alpine
 
 ## Small alpine container with bind package installed.
 
